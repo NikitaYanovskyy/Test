@@ -1,0 +1,40 @@
+@import "./scss/landing";
+@import "./scss/containers";
+@import "./scss/footer";
+
+*::before,*::after,*{
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+@media screen and (max-width: 425px){
+    //////////////////////////////////////////Center text for mobile , getting rid of side margins in containers
+    .mobile-side-margin{
+        margin: 1em 0 !important;
+    }
+    .about-image{
+        display: block;
+        margin: 2em auto 0 auto;
+    }
+    .container-text-center{
+        text-align: center !important;
+    }
+}
+@media screen and (max-width: 768px){
+    ////////////////////////////////////////////////////////Just mobile navigation styling 
+    .burger-button-wrapper{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        z-index: 1;
+        width: 70%;
+        height: 100%;
+        left: -100%;
+        background-color: rgb(177, 44, 34);
+        ul{
+            margin: 2em 0 0 1em;
+            flex-direction: column;
+        }
+    }
+}
